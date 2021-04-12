@@ -42,6 +42,11 @@ const styles = makeStyles({
   description: {
     textIndent: '30px',
   },
+  activeCard: {
+    borderBottom: '4px solid #fc9642',
+    borderTop: 'none',
+    boxShadow: '-18px -17px 0px -11px rgba(31,143,252,0.58)',
+  },
 })
 
 export default styles
