@@ -16,13 +16,25 @@ const App = () => {
                  setNewArticles(articles)
                }
            }
+           
          })
     }, [])
+
+        // useEffect(() => {
+        //   alanBtn({
+        //     key: alanKey,
+        //     onCommand: ({ command, data }) => {
+        //       if (command === 'covidCases') {
+        //         console.log(data)
+        //       }
+        //     },
+        //   })
+        // }, [])
 
     console.log(newsArticles)
     return (
         <div>
-            <h1>Alan Ai news</h1>
+            <h1></h1>
             <NewsCards articles={newsArticles} />
         </div>
     )
