@@ -18,7 +18,8 @@ const styles = makeStyles({
         padding:'10%',
         borderRadius:'10px',
         color:'#fff',
-        cursor:'pointer'
+        cursor:'pointer',
+        boxShadow:'-4px -3px 12px 2px rgba(0,0,0,0.43)'
     },
     infoCard : {
         display:'flex',

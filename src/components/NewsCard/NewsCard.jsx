@@ -24,11 +24,20 @@ const NewsCard = ({article:{source, description, publishedAt, title, urlToImage,
      }, [i, activeArticle, elRefs])
     // console.log(infoCards)
     return (
-      <Card ref={elRefs[i]} className={classNames(classes.card, activeArticle === i  ? classes.activeCard : null)}>
+      <Card
+        ref={elRefs[i]}
+        className={classNames(
+          classes.card,
+          activeArticle === i ? classes.activeCard : null
+        )}
+      >
         <CardActionArea href={url} target='_blank'>
           <CardMedia
             className={classes.image}
-            image={urlToImage || 'No image available'}
+            image={
+              urlToImage ||
+              'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/1200px-No_image_3x4.svg.png'
+            }
           />
           <div className={classes.header}>
             <Typography variant='body2' color='textSecondary' component='h2'>
@@ -47,7 +56,12 @@ const NewsCard = ({article:{source, description, publishedAt, title, urlToImage,
             {title}
           </Typography>
           <CardContent>
-            <Typography className={classes.description} variant='body2' color='textSecondary' component='p'>
+            <Typography
+              className={classes.description}
+              variant='body2'
+              color='textSecondary'
+              component='p'
+            >
               {description}
             </Typography>
           </CardContent>

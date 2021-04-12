@@ -13,6 +13,8 @@ const NewsCards = ({ articles, activeArticle }) => {
     setChecked((prev) => !prev)
   }
 
+
+  console.log(infoCards)
   const InfoCards = () => {
     return (
       <Grow in={checked}>
@@ -22,19 +24,20 @@ const NewsCards = ({ articles, activeArticle }) => {
           alignItems='stretch'
           spacing={3}
         >
-          {infoCards.map((infoCard) => (
+          {infoCards.map((infoCard, index) => (
             <Grid
               item
               xs={12}
               sm={6}
               md={4}
               lg={3}
+              key={index}
               className={classes.infoCard}
             >
               <div
                 className={classes.card}
                 style={{ backgroundColor: infoCard.color }}
-                key={infoCard.id}
+                key={index}
               >
                 <Typography variant='h5'>{infoCard.title}</Typography>
                 {infoCard.info ? (
@@ -58,7 +61,8 @@ const NewsCards = ({ articles, activeArticle }) => {
   if(!articles.length) {
     return (
       <>
-        <div>
+        <div className={classes.container}>
+          <Typography variant="h4">News App </Typography>
           <FormControlLabel
             control={<Switch checked={checked} onChange={handleChange} />}
             label={!checked ? 'How to use?' : 'Close'}
