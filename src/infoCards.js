@@ -10,7 +10,7 @@ const infoCards = [
   {
     color: '#1fb0ff',
     title: 'News by Terms',
-    info: 'Bitcoin, PlayStation 5, Smartphones, Iphone...',
+    info: 'Bitcoin, PlayStation 5, Smartphones, Iphone, President Duterte...',
     text: "Search monkey",
   },
   {

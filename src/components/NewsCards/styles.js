@@ -38,6 +38,12 @@ const styles = makeStyles((theme) => ({
     },
     alignSelf:'center'
   },
+
+  actions: {
+    display:'flex',
+    flexDirection:'column',
+    fontSize:'20px'
+  }
 }))
 
 export default styles;

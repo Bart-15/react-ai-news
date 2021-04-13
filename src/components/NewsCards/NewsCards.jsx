@@ -71,6 +71,18 @@ const NewsCards = ({ articles, activeArticle }) => {
             >
               <Grid item sm={12}>
                 <Typography variant='h3'>News App</Typography>
+                <div className={classes.actions}>
+                  <Typography variant='p'>
+                    To open article to another tab try say: Open article number
+                    3
+                  </Typography>
+                  <Typography variant='p'>
+                    To go back in home page try say: Go back
+                  </Typography>
+                  <Typography variant='p'>
+                    Say YES, if you want Alan to read the article for you.
+                  </Typography>
+                </div>
                 <img className={classes.img} src={alan} alt='' />
               </Grid>
             </Grid>
