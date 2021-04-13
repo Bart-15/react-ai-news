@@ -19,9 +19,15 @@ const styles = makeStyles((theme) => ({
     color: '#fff',
     cursor: 'pointer',
     boxShadow: '-4px -3px 12px 2px rgba(0,0,0,0.43)',
+    [theme.breakpoints.down('xs')]: {
+      height: '50vh',
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: '70vh',
+    },
     [theme.breakpoints.up('lg')]: {
       height: '40vh',
-    }
+    },
   },
   infoCard: {
     display: 'flex',
@@ -30,20 +36,20 @@ const styles = makeStyles((theme) => ({
   },
   img: {
     width: '250px',
-    [theme.breakpoints.up('md')] : {
-        width:'500px'
+    [theme.breakpoints.up('md')]: {
+      width: '500px',
     },
-    [theme.breakpoints.up('lg')] : {
-        width:'100%'
+    [theme.breakpoints.up('lg')]: {
+      width: '100%',
     },
-    alignSelf:'center'
+    alignSelf: 'center',
   },
 
   actions: {
-    display:'flex',
-    flexDirection:'column',
-    fontSize:'20px'
-  }
+    display: 'flex',
+    flexDirection: 'column',
+    fontSize: '20px',
+  },
 }))
 
 export default styles;
