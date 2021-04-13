@@ -47,6 +47,7 @@ const styles = makeStyles({
     borderTop: 'none',
     boxShadow: '-18px -17px 0px -11px rgba(31,143,252,0.58)',
   },
+
 })
 
 export default styles

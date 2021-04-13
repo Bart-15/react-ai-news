@@ -1,5 +1,5 @@
 import React, {useState, useEffect, createRef} from 'react'
-import {Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography} from '@material-ui/core'
+import {Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography, CssBaseline} from '@material-ui/core'
 import useStyles from './styles'
 import classNames from 'classnames'
 const NewsCard = ({article:{source, description, publishedAt, title, urlToImage, url}, i, activeArticle}) => {
@@ -31,6 +31,7 @@ const NewsCard = ({article:{source, description, publishedAt, title, urlToImage,
           activeArticle === i ? classes.activeCard : null
         )}
       >
+        <CssBaseline />
         <CardActionArea href={url} target='_blank'>
           <CardMedia
             className={classes.image}
